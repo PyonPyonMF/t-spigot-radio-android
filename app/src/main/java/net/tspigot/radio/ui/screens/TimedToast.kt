@@ -1,4 +1,4 @@
-package net.tspigot.radio.ui
+package net.tspigot.radio.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Animatable

@@ -34,8 +34,8 @@ import net.tspigot.radio.AppConfig
 import net.tspigot.radio.data.BookmarkStore
 import net.tspigot.radio.data.NowPlaying
 import net.tspigot.radio.R
-import net.tspigot.radio.ui.TimedToastHost
-import net.tspigot.radio.ui.rememberTimedToastController
+import net.tspigot.radio.ui.screens.TimedToastHost
+import net.tspigot.radio.ui.screens.rememberTimedToastController
 import net.tspigot.radio.ui.theme.TSpigotRadioTheme
 import net.tspigot.radio.util.HistoryLine
 import org.json.JSONArray
