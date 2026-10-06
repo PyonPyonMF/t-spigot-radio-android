@@ -578,14 +578,17 @@ fun PlayerScreen(
                         enabled = controller != null,
                         onClick = {
                             controller?.let {
+                                userWantsPlaying = !userWantsPlaying
+                                statusMessage = null
+
+                                // Discard buffered audio, including before the first Play.
+                                it.playWhenReady = false
+                                it.stop()
+                                it.seekToDefaultPosition()
+
                                 if (userWantsPlaying) {
-                                    it.pause()
-                                    userWantsPlaying = false
-                                    statusMessage = null
-                                } else {
-                                    statusMessage = null
+                                    it.prepare()
                                     it.play()
-                                    userWantsPlaying = true
                                 }
                             }
                         }
