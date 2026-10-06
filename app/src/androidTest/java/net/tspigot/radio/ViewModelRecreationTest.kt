@@ -36,7 +36,7 @@ class ViewModelRecreationTest {
             }
         }
     }
-
+    
     @Test
     fun historyActivityRetainsFilter() {
         ActivityScenario.launch(HistoryActivity::class.java).use { scenario ->
