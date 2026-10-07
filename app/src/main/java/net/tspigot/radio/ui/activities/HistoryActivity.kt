@@ -27,8 +27,8 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 import net.tspigot.radio.R
 import net.tspigot.radio.data.NowPlaying
-import net.tspigot.radio.ui.TimedToastHost
-import net.tspigot.radio.ui.rememberTimedToastController
+import net.tspigot.radio.ui.screens.TimedToastHost
+import net.tspigot.radio.ui.screens.rememberTimedToastController
 import net.tspigot.radio.ui.theme.TSpigotRadioTheme
 import net.tspigot.radio.ui.viewmodel.HistoryUiState
 import net.tspigot.radio.ui.viewmodel.HistoryViewModel

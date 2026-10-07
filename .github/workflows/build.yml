@@ -1,0 +1,35 @@
+# GOD DAMN, ACTUALLY WORKING WORKFLOF??????
+name: build apk
+
+on:
+
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: setup oracle hellhole
+        uses: actions/setup-java@v6
+        with:
+          distribution: 'oracle'
+          java-version: 'latest'
+          cache: 'gradle'
+
+      - name: chmooooooood
+        run: chmod +x ./gradlew
+
+      - name: build app
+        run: |
+          ./gradlew assembleDebug
+          ./gradlew assembleRelease
+          
+      # ?????????????
+      # PROFIT!
